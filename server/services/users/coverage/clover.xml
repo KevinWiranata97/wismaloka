@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1653017447670" clover="3.2.0">
-  <project timestamp="1653017447670" name="All files">
-    <metrics statements="214" coveredstatements="211" conditionals="47" coveredconditionals="43" methods="25" coveredmethods="25" elements="286" coveredelements="279" complexity="0" loc="214" ncloc="214" packages="6" files="12" classes="12"/>
+<coverage generated="1653018456381" clover="3.2.0">
+  <project timestamp="1653018456381" name="All files">
+    <metrics statements="216" coveredstatements="214" conditionals="49" coveredconditionals="45" methods="25" coveredmethods="25" elements="290" coveredelements="284" complexity="0" loc="216" ncloc="216" packages="6" files="12" classes="12"/>
     <package name="users">
       <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="app.js" path="D:\project\Final-project2\wismaloka\server\services\users\app.js">
@@ -22,9 +22,9 @@
       </file>
     </package>
     <package name="users.controlllers">
-      <metrics statements="82" coveredstatements="81" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+      <metrics statements="84" coveredstatements="84" conditionals="20" coveredconditionals="20" methods="7" coveredmethods="7"/>
       <file name="userController.js" path="D:\project\Final-project2\wismaloka\server\services\users\controlllers\userController.js">
-        <metrics statements="82" coveredstatements="81" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+        <metrics statements="84" coveredstatements="84" conditionals="20" coveredconditionals="20" methods="7" coveredmethods="7"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -86,27 +86,29 @@
         <line num="230" count="6" type="stmt"/>
         <line num="232" count="6" type="stmt"/>
         <line num="241" count="4" type="stmt"/>
-        <line num="247" count="1" type="stmt"/>
-        <line num="248" count="1" type="stmt"/>
-        <line num="252" count="1" type="stmt"/>
-        <line num="257" count="0" type="stmt"/>
-        <line num="262" count="3" type="stmt"/>
-        <line num="263" count="3" type="stmt"/>
-        <line num="265" count="3" type="stmt"/>
-        <line num="268" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="269" count="1" type="stmt"/>
-        <line num="271" count="1" type="stmt"/>
-        <line num="276" count="2" type="stmt"/>
-        <line num="277" count="2" type="stmt"/>
-        <line num="282" count="3" type="stmt"/>
-        <line num="283" count="3" type="stmt"/>
-        <line num="285" count="3" type="stmt"/>
-        <line num="286" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="287" count="1" type="stmt"/>
-        <line num="290" count="2" type="stmt"/>
-        <line num="292" count="2" type="stmt"/>
-        <line num="297" count="1" type="stmt"/>
-        <line num="302" count="1" type="stmt"/>
+        <line num="247" count="2" type="stmt"/>
+        <line num="248" count="2" type="stmt"/>
+        <line num="252" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="253" count="1" type="stmt"/>
+        <line num="256" count="1" type="stmt"/>
+        <line num="261" count="1" type="stmt"/>
+        <line num="266" count="3" type="stmt"/>
+        <line num="267" count="3" type="stmt"/>
+        <line num="269" count="3" type="stmt"/>
+        <line num="272" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="273" count="1" type="stmt"/>
+        <line num="275" count="1" type="stmt"/>
+        <line num="280" count="2" type="stmt"/>
+        <line num="281" count="2" type="stmt"/>
+        <line num="286" count="3" type="stmt"/>
+        <line num="287" count="3" type="stmt"/>
+        <line num="289" count="3" type="stmt"/>
+        <line num="290" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="291" count="1" type="stmt"/>
+        <line num="294" count="2" type="stmt"/>
+        <line num="296" count="2" type="stmt"/>
+        <line num="301" count="1" type="stmt"/>
+        <line num="306" count="1" type="stmt"/>
       </file>
     </package>
     <package name="users.helpers">
@@ -162,8 +164,8 @@
       </file>
       <file name="errHandler.js" path="D:\project\Final-project2\wismaloka\server\services\users\middlewares\errHandler.js">
         <metrics statements="22" coveredstatements="22" conditionals="10" coveredconditionals="10" methods="2" coveredmethods="2"/>
-        <line num="2" count="25" type="stmt"/>
-        <line num="3" count="25" type="cond" truecount="10" falsecount="0"/>
+        <line num="2" count="26" type="stmt"/>
+        <line num="3" count="26" type="cond" truecount="10" falsecount="0"/>
         <line num="6" count="15" type="stmt"/>
         <line num="7" count="15" type="stmt"/>
         <line num="10" count="15" type="stmt"/>
@@ -173,8 +175,8 @@
         <line num="20" count="1" type="stmt"/>
         <line num="22" count="2" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="30" count="2" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="30" count="3" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>

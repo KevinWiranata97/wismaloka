@@ -7,7 +7,16 @@ beforeAll(async () => {
 
 });
 
+
 let access_token = null;
+
+describe("failed test for get users feature", () => {
+  test("should error message User not found when there is no user data", async () => {
+    const res = await request(app).get("/users");
+    expect(res.status).toBe(404);
+    expect(res.body).toHaveProperty("message","User not found")
+  });
+});
 
 describe("acceptance test for register feature", () => {
   test("should return id,email,username, and role with status code 201 for new user that registered as Admin", async () => {
@@ -171,7 +180,7 @@ describe("acceptance test for register feature", () => {
     );
   
   });
-}, 5000);
+});
 
 describe("failed test for register feature", () => {
   describe("email validation test for register user", () => {

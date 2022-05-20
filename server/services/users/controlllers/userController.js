@@ -249,6 +249,10 @@ class UserController {
         attributes: { exclude: ["password"] },
       });
 
+      if(getUser.length === 0) {
+        throw { name: "Data not found" };
+      }
+
       res.status(200).json({
         Code: 200,
         data: getUser,
