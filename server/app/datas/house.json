@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "Jual Rumah",
+      "price": "1000000000",
+      "description": "dijual rumah",
+      "location": "jakarta",
+      "instalment": "10000",
+      "coordinate": ["12414", "12414"],
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "Jual Apart",
+      "price": "11234352624",
+      "description": "dijual Apart",
+      "location": "jakarta",
+      "instalment": "124124124",
+      "coordinate": ["443141341", "2412413513"],
+      "userId": 1
+    }
+  ]
+  

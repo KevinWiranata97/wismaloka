@@ -1,0 +1,21 @@
+[
+    {
+      "houseId": 1,
+      "luasTanah": 100,
+      "luasBangunan": 80,
+      "certificate": "SHM",
+      "dayaListrik": 300,
+      "totalBedroom": 3,
+      "totalBathroom": 2
+    },
+    {
+      "houseId": 1,
+      "luasTanah": 70,
+      "luasBangunan": 70,
+      "certificate": "SHM",
+      "dayaListrik": 400,
+      "totalBedroom": 2,
+      "totalBathroom": 1
+    }
+  ]
+  
