@@ -5,9 +5,7 @@ const authorization = async (req, res, next) => {
     const { id } = req.params;
     const getUser = await User.findByPk(id);
 
-    if (!getUser) {
-      throw { name: "Data not found" };
-    } else {
+  
       if (req.user.role === "Admin") {
         next();
       } else {
@@ -16,7 +14,7 @@ const authorization = async (req, res, next) => {
         } else {
           throw { name: "Forbidden"};
         }
-      }
+      
     }
   } catch (error) {
     // console.log(error);

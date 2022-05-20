@@ -36,6 +36,7 @@ class UserController {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
+            role: newUser.role
           },
         });
       } else {
@@ -100,6 +101,7 @@ class UserController {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
+            role: newUser.role
           },
         });
       } else{
@@ -164,6 +166,7 @@ class UserController {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
+            role: newUser.role
           },
         });
       }else{
