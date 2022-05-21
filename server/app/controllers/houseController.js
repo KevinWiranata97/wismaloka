@@ -5,6 +5,12 @@ class HouseController {
       const houses = await House.findAll({
         include: [Specification, Image],
       });
+      if (houses.length === 0) {
+        throw {
+          name: "Not Found",
+          message: "House not found",
+        };
+      }
       res.status(200).json(houses);
     } catch (err) {
       next(err);
@@ -16,6 +22,12 @@ class HouseController {
         where: { id: req.params.id },
         include: [Specification, Image],
       });
+      if (!house) {
+        throw {
+          name: "Not Found",
+          message: "House not found",
+        };
+      }
       res.status(200).json(house);
     } catch (err) {
       next(err);
@@ -36,7 +48,9 @@ class HouseController {
         },
         { transaction: t }
       );
+
       let Images = req.uploadImages;
+      console.log(Specifications,"<<<<<<<<");
       Specifications.houseId = house.id;
       Images.map((el) => (el.houseId = house.id));
       await Specification.create(Specifications, { transaction: t });
