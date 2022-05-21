@@ -7,11 +7,6 @@ const errorHandler = (err, req, res, next) => {
       const message = err.join("\n");
       res.status(400).json({ message });
       break;
-    case "Invalid email / password":
-      res.status(400).json({
-        message: err.name,
-      });
-      break;
     case "JsonWebTokenError":
     case "TokenExpiredError":
     case "Unauthorized":
@@ -31,6 +26,11 @@ const errorHandler = (err, req, res, next) => {
         message: err.name,
       });
       break;
+      case "Required":
+        res.status(400).json({
+          message: err.message,
+        });
+        break;
     default:
       res.status(500).json({ message: "Internal Server Error" });
   }

@@ -1,8 +1,9 @@
 const axios = require("axios");
 const FormData = require("form-data");
 
-async function imageKit(buffer, originalname) {
+async function imageKit(buffer, originalname, next) {
   try {
+
     let image = new FormData();
     image.append("file", buffer.toString("base64"));
     image.append("fileName", originalname);
@@ -18,7 +19,7 @@ async function imageKit(buffer, originalname) {
       },
     });
   } catch (error) {
-    console.log(error);
+    next(error);
   }
 }
 
