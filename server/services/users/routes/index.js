@@ -31,6 +31,9 @@ router.get("/users", UserController.fetchUser);
 router.get("/users/:id", UserController.fetchOneUser);
 
 router.use(authentication);
+router.post("/payment", UserController.payment);
+
+router.patch("/premiumAgen", UserController.premiumUser);
 
 router.delete("/users/:id", authorization, UserController.deleteUser);
 

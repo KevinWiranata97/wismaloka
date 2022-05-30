@@ -1,21 +1,767 @@
 [
-    {
-      "houseId": 1,
-      "luasTanah": 100,
-      "luasBangunan": 80,
-      "certificate": "SHM",
-      "dayaListrik": 300,
-      "totalBedroom": 3,
-      "totalBathroom": 2
-    },
-    {
-      "houseId": 2,
-      "luasTanah": 70,
-      "luasBangunan": 70,
-      "certificate": "SHM",
-      "dayaListrik": 400,
-      "totalBedroom": 2,
-      "totalBathroom": 1
-    }
-  ]
-  
+  {
+    "houseId": 1,
+    "luasTanah": 103,
+    "luasBangunan": 114,
+    "certificate": "SHM",
+    "dayaListrik": 900,
+    "totalBedroom": 2,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 2,
+    "luasTanah": 250,
+    "luasBangunan": 230,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 6,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 3,
+    "luasTanah": 66,
+    "luasBangunan": 71,
+    "certificate": "SHM",
+    "dayaListrik": 1500,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 4,
+    "luasTanah": 68,
+    "luasBangunan": 112,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 9,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 5,
+    "luasTanah": 493,
+    "luasBangunan": 340,
+    "certificate": "SHM",
+    "dayaListrik": 4400,
+    "totalBedroom": 6,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 6,
+    "luasTanah": 95,
+    "luasBangunan": 80,
+    "certificate": "SHM",
+    "dayaListrik": 1300,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 7,
+    "luasTanah": 243,
+    "luasBangunan": 312,
+    "certificate": "SHM",
+    "dayaListrik": 7700,
+    "totalBedroom": 5,
+    "totalBathroom": 5
+  },
+  {
+    "houseId": 8,
+    "luasTanah": 60,
+    "luasBangunan": 80,
+    "certificate": "SHM",
+    "dayaListrik": 900,
+    "totalBedroom": 3,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 9,
+    "luasTanah": 570,
+    "luasBangunan": 1300,
+    "certificate": "SHM",
+    "dayaListrik": 11000,
+    "totalBedroom": 7,
+    "totalBathroom": 6
+  },
+  {
+    "houseId": 10,
+    "luasTanah": 362,
+    "luasBangunan": 374,
+    "certificate": "SHM",
+    "dayaListrik": 1100,
+    "totalBedroom": 3,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 11,
+    "luasTanah": 60,
+    "luasBangunan": 54,
+    "certificate": "SHM",
+    "dayaListrik": 3500,
+    "totalBedroom": 2,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 12,
+    "luasTanah": 30,
+    "luasBangunan": 30,
+    "certificate": "SHM",
+    "dayaListrik": 900,
+    "totalBedroom": 1,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 13,
+    "luasTanah": 72,
+    "luasBangunan": 41,
+    "certificate": "SHM",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 14,
+    "luasTanah": 84,
+    "luasBangunan": 55,
+    "certificate": "SHM",
+    "dayaListrik": 400,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 15,
+    "luasTanah": 60,
+    "luasBangunan": 22,
+    "certificate": "SHM",
+    "dayaListrik": 1300,
+    "totalBedroom": 1,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 16,
+    "luasTanah": 60,
+    "luasBangunan": 30,
+    "certificate": "SHM",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 17,
+    "luasTanah": 113,
+    "luasBangunan": 190,
+    "certificate": "SHM",
+    "dayaListrik": 400,
+    "totalBedroom": 4,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 18,
+    "luasTanah": 113,
+    "luasBangunan": 190,
+    "certificate": "SHM",
+    "dayaListrik": 5500,
+    "totalBedroom": 4,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 19,
+    "luasTanah": 66,
+    "luasBangunan": 71,
+    "certificate": "SHM",
+    "dayaListrik": 1500,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 20,
+    "luasTanah": 112,
+    "luasBangunan": 120,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 4,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 21,
+    "luasTanah": 60,
+    "luasBangunan": 56,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 22,
+    "luasTanah": 45,
+    "luasBangunan": 84,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 23,
+    "luasTanah": 45,
+    "luasBangunan": 60,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 24,
+    "luasTanah": 112,
+    "luasBangunan": 140,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 4,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 25,
+    "luasTanah": 72,
+    "luasBangunan": 36,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 26,
+    "luasTanah": 92,
+    "luasBangunan": 82,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 27,
+    "luasTanah": 60,
+    "luasBangunan": 55,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 28,
+    "luasTanah": 72,
+    "luasBangunan": 36,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 29,
+    "luasTanah": 83,
+    "luasBangunan": 150,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 30,
+    "luasTanah": 98,
+    "luasBangunan": 45,
+    "certificate": "SHGB - Hak Guna Bangunan",
+    "dayaListrik": 2200,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 31,
+    "luasTanah": 60,
+    "luasBangunan": 63,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 32,
+    "luasTanah": 36,
+    "luasBangunan": 72,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 33,
+    "luasTanah": 65,
+    "luasBangunan": 32,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 34,
+    "luasTanah": 60,
+    "luasBangunan": 45,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 35,
+    "luasTanah": 72,
+    "luasBangunan": 51,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 36,
+    "luasTanah": 84,
+    "luasBangunan": 96,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 4,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 37,
+    "luasTanah": 66,
+    "luasBangunan": 132,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 38,
+    "luasTanah": 45,
+    "luasBangunan": 64,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 39,
+    "luasTanah": 35,
+    "luasBangunan": 22,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 40,
+    "luasTanah": 94,
+    "luasBangunan": 94,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 41,
+    "luasTanah": 60,
+    "luasBangunan": 36,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 42,
+    "luasTanah": 70,
+    "luasBangunan": 65,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 43,
+    "luasTanah": 48,
+    "luasBangunan": 60,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 44,
+    "luasTanah": 60,
+    "luasBangunan": 55,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 45,
+    "luasTanah": 60,
+    "luasBangunan": 36,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 46,
+    "luasTanah": 75,
+    "luasBangunan": 35,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 47,
+    "luasTanah": 60,
+    "luasBangunan": 39,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 48,
+    "luasTanah": 60,
+    "luasBangunan": 29,
+    "certificate": "SHGB - Hak Guna Bangunan",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 49,
+    "luasTanah": 60,
+    "luasBangunan": 29,
+    "certificate": "SHGB - Hak Guna Bangunan",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 50,
+    "luasTanah": 50,
+    "luasBangunan": 65,
+    "certificate": "SHGB - Hak Guna Bangunan",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 51,
+    "luasTanah": 72,
+    "luasBangunan": 104,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 52,
+    "luasTanah": 60,
+    "luasBangunan": 120,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 53,
+    "luasTanah": 60,
+    "luasBangunan": 50,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 54,
+    "luasTanah": 60,
+    "luasBangunan": 55,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 2,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 55,
+    "luasTanah": 60,
+    "luasBangunan": 36,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 56,
+    "luasTanah": 59,
+    "luasBangunan": 70,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 57,
+    "luasTanah": 120,
+    "luasBangunan": 98,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 58,
+    "luasTanah": 90,
+    "luasBangunan": 79,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 59,
+    "luasTanah": 107,
+    "luasBangunan": 36,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 60,
+    "luasTanah": 78,
+    "luasBangunan": 83,
+    "certificate": "SHM - Sertifikat Hak Milik",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 61,
+    "luasTanah": 60,
+    "luasBangunan": 57,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 62,
+    "luasTanah": 135,
+    "luasBangunan": 160,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 63,
+    "luasTanah": 143,
+    "luasBangunan": 200,
+    "certificate": "SHM",
+    "dayaListrik": 2300,
+    "totalBedroom": 4,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 64,
+    "luasTanah": 84,
+    "luasBangunan": 90,
+    "certificate": "SHM",
+    "dayaListrik": 2300,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 65,
+    "luasTanah": 72,
+    "luasBangunan": 82,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 66,
+    "luasTanah": 60,
+    "luasBangunan": 22,
+    "certificate": "SHM",
+    "dayaListrik": 1900,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 67,
+    "luasTanah": 78,
+    "luasBangunan": 80,
+    "certificate": "SHM",
+    "dayaListrik": 2100,
+    "totalBedroom": 3,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 68,
+    "luasTanah": 70,
+    "luasBangunan": 40,
+    "certificate": "SHM",
+    "dayaListrik": 1300,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 69,
+    "luasTanah": 66,
+    "luasBangunan": 86,
+    "certificate": "SHM",
+    "dayaListrik": 1500,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 70,
+    "luasTanah": 128,
+    "luasBangunan": 138,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 5,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 71,
+    "luasTanah": 640,
+    "luasBangunan": 600,
+    "certificate": "SHM",
+    "dayaListrik": 2600,
+    "totalBedroom": 5,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 72,
+    "luasTanah": 64,
+    "luasBangunan": 100,
+    "certificate": "SHM",
+    "dayaListrik": 1800,
+    "totalBedroom": 2,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 73,
+    "luasTanah": 120,
+    "luasBangunan": 280,
+    "certificate": "SHM",
+    "dayaListrik": 3500,
+    "totalBedroom": 5,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 74,
+    "luasTanah": 200,
+    "luasBangunan": 198,
+    "certificate": "SHM",
+    "dayaListrik": 2500,
+    "totalBedroom": 4,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 75,
+    "luasTanah": 220,
+    "luasBangunan": 208,
+    "certificate": "SHM",
+    "dayaListrik": 2000,
+    "totalBedroom": 5,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 76,
+    "luasTanah": 550,
+    "luasBangunan": 286,
+    "certificate": "SHM",
+    "dayaListrik": 3500,
+    "totalBedroom": 6,
+    "totalBathroom": 4
+  },
+  {
+    "houseId": 77,
+    "luasTanah": 94,
+    "luasBangunan": 80,
+    "certificate": "SHGB",
+    "dayaListrik": 3500,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 78,
+    "luasTanah": 105,
+    "luasBangunan": 185,
+    "certificate": "SHM",
+    "dayaListrik": 4400,
+    "totalBedroom": 4,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 79,
+    "luasTanah": 350,
+    "luasBangunan": 420,
+    "certificate": "SHM",
+    "dayaListrik": 4400,
+    "totalBedroom": 7,
+    "totalBathroom": 6
+  },
+  {
+    "houseId": 80,
+    "luasTanah": 225,
+    "luasBangunan": 180,
+    "certificate": "SHM",
+    "dayaListrik": 2200,
+    "totalBedroom": 4,
+    "totalBathroom": 3
+  },
+  {
+    "houseId": 81,
+    "luasTanah": 104,
+    "luasBangunan": 55,
+    "certificate": "SHM",
+    "dayaListrik": 1000,
+    "totalBedroom": 2,
+    "totalBathroom": 1
+  },
+  {
+    "houseId": 82,
+    "luasTanah": 60,
+    "luasBangunan": 66,
+    "certificate": "SHM",
+    "dayaListrik": 800,
+    "totalBedroom": 4,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 83,
+    "luasTanah": 700,
+    "luasBangunan": 128,
+    "certificate": "SHM",
+    "dayaListrik": 1800,
+    "totalBedroom": 2,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 84,
+    "luasTanah": 120,
+    "luasBangunan": 80,
+    "certificate": "SHM",
+    "dayaListrik": 1200,
+    "totalBedroom": 3,
+    "totalBathroom": 2
+  },
+  {
+    "houseId": 85,
+    "luasTanah": 277,
+    "luasBangunan": 325,
+    "certificate": "SHM",
+    "dayaListrik": 3500,
+    "totalBedroom": 3,
+    "totalBathroom": 3
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "username": "admin",
+    "email": "admin@ad.min",
+    "password": "admin",
+    "phoneNumber": 878768716,
+    "profilePict": "https://randomuser.me/api/portraits/men/41.jpg",
+    "role": "Admin",
+    "isPremium": true
+  },
+  {
+    "username": "Radhea",
+    "email": "radhea@mail.com",
+    "password": "12345",
+    "phoneNumber": 8787662716,
+    "profilePict": "https://randomuser.me/api/portraits/men/42.jpg",
+    "role": "Agen",
+    "isPremium": false
+  },
+  {
+    "username": "Bayu",
+    "email": "bayu@mail.com",
+    "password": "12345",
+    "phoneNumber": 81762617121,
+    "profilePict": "https://randomuser.me/api/portraits/men/43.jpg",
+    "role": "User",
+    "isPremium": false
+  }
+]

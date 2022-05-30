@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
         },
       },
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
         validate: {
           notEmpty: {
@@ -76,17 +76,31 @@ module.exports = (sequelize, DataTypes) => {
           },
         },
       },
-      coordinate: {
-        type: DataTypes.INTEGER,
+      latitude: {
+        type: DataTypes.FLOAT,
         allowNull: false,
         validate: {
           notEmpty: {
             args: true,
-            msg: "Coordinate is required",
+            msg: "latitude is required",
           },
           notNull: {
             args: true,
-            msg: "Coordinate is required",
+            msg: "latitude is required",
+          },
+        },
+      },
+      longitude: {
+        type: DataTypes.FLOAT,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            args: true,
+            msg: "longitude is required",
+          },
+          notNull: {
+            args: true,
+            msg: "longitude is required",
           },
         },
       },

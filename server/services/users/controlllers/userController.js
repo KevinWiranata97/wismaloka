@@ -2,18 +2,16 @@ const { comparePass } = require("../helpers/bcrypt");
 const { createToken } = require("../helpers/jwt");
 const { imageKit } = require("../middlewares/imgKitMulter");
 const { User, UserHouse } = require("../models/index");
+const snap = require("../helpers/midtrans");
 
 class UserController {
   //Register Admin
   static async adminRegister(req, res, next) {
     try {
-     
-      const { username, email, password, phoneNumber, isPremium } = req.body;
+      const { username, email, password, phoneNumber } = req.body;
 
-      // console.log(req.body, "======");
       if (req.file) {
         const { buffer, originalname } = req.file;
-        // console.log(req.file, "<<<<<<");
         const result = await imageKit(buffer, originalname);
         const profilePict = result.data.url;
         const newUser = await User.create({
@@ -23,7 +21,7 @@ class UserController {
           phoneNumber,
           profilePict,
           role: "Admin",
-          isPremium,
+          isPremium: true,
         });
 
         await UserHouse.create({
@@ -36,7 +34,7 @@ class UserController {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
-            role: newUser.role
+            role: newUser.role,
           },
         });
       } else {
@@ -46,7 +44,7 @@ class UserController {
           password,
           phoneNumber,
           role: "Admin",
-          isPremium,
+          isPremium: true,
         });
 
         await UserHouse.create({
@@ -63,10 +61,7 @@ class UserController {
           },
         });
       }
-
-      // console.log(result.data, "++++++");
     } catch (error) {
-      console.log(error);
       next(error);
     }
   }
@@ -74,7 +69,7 @@ class UserController {
   //Register Agen
   static async agenRegister(req, res, next) {
     try {
-      const { username, email, password, phoneNumber, isPremium } = req.body;
+      const { username, email, password, phoneNumber } = req.body;
       if (req.file) {
         const { buffer, originalname } = req.file;
 
@@ -88,7 +83,7 @@ class UserController {
           phoneNumber,
           profilePict,
           role: "Agen",
-          isPremium,
+          isPremium: false,
         });
 
         await UserHouse.create({
@@ -101,17 +96,17 @@ class UserController {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
-            role: newUser.role
+            role: newUser.role,
           },
         });
-      } else{
+      } else {
         const newUser = await User.create({
           username,
           email,
           password,
           phoneNumber,
           role: "Agen",
-          isPremium,
+          isPremium: false,
         });
 
         await UserHouse.create({
@@ -128,9 +123,7 @@ class UserController {
           },
         });
       }
-
     } catch (error) {
-      console.log(error);
       next(error);
     }
   }
@@ -138,14 +131,13 @@ class UserController {
   //Register User
   static async userRegister(req, res, next) {
     try {
-      const { username, email, password, phoneNumber, isPremium } = req.body;
+      const { username, email, password, phoneNumber } = req.body;
 
-      if(req.file){
+      if (req.file) {
         const { buffer, originalname } = req.file;
-        // console.log(req.file, "<<<<<<");
         const result = await imageKit(buffer, originalname);
         const profilePict = result.data.url;
-  
+
         const newUser = await User.create({
           username,
           email,
@@ -153,47 +145,46 @@ class UserController {
           phoneNumber,
           profilePict,
           role: "User",
-          isPremium,
+          isPremium: false,
         });
-  
+
         await UserHouse.create({
           UserId: newUser.id,
         });
-  
+
         res.status(201).json({
           Code: 201,
           data: {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
-            role: newUser.role
+            role: newUser.role,
           },
         });
-      }else{
+      } else {
         const newUser = await User.create({
           username,
           email,
           password,
           phoneNumber,
           role: "User",
-          isPremium,
+          isPremium: false,
         });
-  
+
         await UserHouse.create({
           UserId: newUser.id,
         });
-  
+
         res.status(201).json({
           Code: 201,
           data: {
             id: newUser.id,
             username: newUser.username,
             email: newUser.email,
-            role: newUser.role
+            role: newUser.role,
           },
         });
       }
-     
     } catch (error) {
       next(error);
     }
@@ -235,9 +226,10 @@ class UserController {
         id: getUser.id,
         role: getUser.role,
         name: getUser.username,
+        isPremium: getUser.isPremium,
+        profilePict: getUser.profilePict,
       });
     } catch (error) {
-      // console.log(error);
       next(error);
     }
   }
@@ -249,7 +241,7 @@ class UserController {
         attributes: { exclude: ["password"] },
       });
 
-      if(getUser.length === 0) {
+      if (getUser.length === 0) {
         throw { name: "Data not found" };
       }
 
@@ -277,7 +269,6 @@ class UserController {
         data: user,
       });
     } catch (error) {
-      console.log(error);
       next(error);
     }
   }
@@ -287,7 +278,7 @@ class UserController {
       const { id } = req.params;
 
       const getUser = await User.findByPk(id);
-      if (getUser <= 0) {
+      if (!getUser) {
         throw { name: "Data not found" };
       }
 
@@ -300,6 +291,35 @@ class UserController {
     } catch (error) {
       next(error);
     }
+  }
+
+  //midtrans
+  static async payment(req, res, next) {
+    let parameter = {
+      transaction_details: {
+        order_id: Math.floor(Math.random() * 100000),
+        gross_amount: 200000,
+      },
+      credit_card: {
+        secure: true,
+      },
+    };
+
+    const trx = await snap.createTransaction(parameter);
+    res.status(201).json({
+      token: trx.token,
+      redirect_url: trx.redirect_url,
+    });
+  }
+
+  static async premiumUser(req, res, next) {
+    const { id } = req.user;
+
+    await User.update({ isPremium: true }, { where: { id } });
+
+    res.status(200).json({
+      message: "congrats, your account is premium",
+    });
   }
 }
 

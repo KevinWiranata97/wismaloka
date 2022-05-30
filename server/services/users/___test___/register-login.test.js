@@ -4,9 +4,7 @@ const { User } = require("../models");
 
 beforeAll(async () => {
   await User.destroy({ truncate: true, cascade: true, restartIdentity: true });
-
 });
-
 
 let access_token = null;
 
@@ -14,7 +12,7 @@ describe("failed test for get users feature", () => {
   test("should error message User not found when there is no user data", async () => {
     const res = await request(app).get("/users");
     expect(res.status).toBe(404);
-    expect(res.body).toHaveProperty("message","User not found")
+    expect(res.body).toHaveProperty("message", "User not found");
   });
 });
 
@@ -57,7 +55,7 @@ describe("acceptance test for register feature", () => {
       .field("username", payload.username)
       .field("password", payload.password)
       .field("email", payload.email)
-      .attach("profilePict", "./Capture.PNG")
+      .attach("profilePict", "./Capture.PNG");
     expect(res.status).toBe(201);
     expect(res.body).toHaveProperty("Code", expect.any(Number));
     expect(res.body).toHaveProperty("data");
@@ -70,7 +68,6 @@ describe("acceptance test for register feature", () => {
       "username",
       expect.stringContaining(payload.username)
     );
-  
   });
 
   test("should return id,email,username, and role with status code 201 for new user that registered as Agen", async () => {
@@ -111,7 +108,7 @@ describe("acceptance test for register feature", () => {
       .field("username", payload.username)
       .field("password", payload.password)
       .field("email", payload.email)
-      .attach("profilePict", "./Capture.PNG")
+      .attach("profilePict", "./Capture.PNG");
     expect(res.status).toBe(201);
     expect(res.body).toHaveProperty("Code", expect.any(Number));
     expect(res.body).toHaveProperty("data");
@@ -124,7 +121,6 @@ describe("acceptance test for register feature", () => {
       "username",
       expect.stringContaining(payload.username)
     );
-  
   });
 
   test("should return id,email,username, and role with status code 201 for new user that registered as User", async () => {
@@ -165,7 +161,7 @@ describe("acceptance test for register feature", () => {
       .field("username", payload.username)
       .field("password", payload.password)
       .field("email", payload.email)
-      .attach("profilePict", "./Capture.PNG")
+      .attach("profilePict", "./Capture.PNG");
     expect(res.status).toBe(201);
     expect(res.body).toHaveProperty("Code", expect.any(Number));
     expect(res.body).toHaveProperty("data");
@@ -178,7 +174,6 @@ describe("acceptance test for register feature", () => {
       "username",
       expect.stringContaining(payload.username)
     );
-  
   });
 });
 
@@ -581,11 +576,7 @@ describe("succes test for delete users by id feature with access_token", () => {
       .set("access_token", access_token);
     expect(res.status).toBe(200);
   });
-
-  
 });
-
-
 
 describe("failed test for delete users by id feature without access_token", () => {
   test("should return message invalid token when not provided with access_token", async () => {
@@ -639,7 +630,6 @@ describe("failed test for delete users by id feature without access_token", () =
     );
   });
 
-
   test("should return message forbidden access when userId not found in database", async () => {
     const payload = {
       password: "123456",
@@ -670,3 +660,25 @@ describe("calling endpoint with wrong access point", () => {
   });
 });
 
+describe("acceptance test for payment endpoint", () => {
+  test("should return status of 201 and url to payment", async () => {
+    const res = await request(app)
+      .post("/payment")
+      .set("access_token", access_token);
+    expect(res.status).toBe(201);
+    expect(res.body).toHaveProperty("redirect_url");
+  });
+});
+
+describe("acceptance test for patch status to premium user endpoint", () => {
+  test("should return status of 200 when success change status to premium", async () => {
+    const res = await request(app)
+      .patch("/premiumAgen")
+      .set("access_token", access_token);
+    expect(res.status).toBe(200);
+    expect(res.body).toHaveProperty(
+      "message",
+      expect.stringContaining("congrats, your account is premium")
+    );
+  });
+});
